@@ -1,11 +1,6 @@
 import React, { useEffect, createElement } from 'react';
 export function WorkShowcase() {
   const videoProjects = [{
-    id: 1,
-    vimeoId: '1108700816',
-    title: 'UL x Brewers',
-    aspectRatio: '75%' // 4:3 ratio
-  }, {
     id: 2,
     vimeoId: '1108700803',
     title: 'UL x BR REEL',
@@ -15,11 +10,6 @@ export function WorkShowcase() {
     vimeoId: '1108700730',
     title: 'She Wolf Milwaukee Camp',
     aspectRatio: '177.78%' // 9:16 ratio
-  }, {
-    id: 4,
-    vimeoId: '1108700681',
-    title: 'Screen Print',
-    aspectRatio: '75%' // 4:3 ratio
   }, {
     id: 5,
     vimeoId: '1108700595',
@@ -35,6 +25,16 @@ export function WorkShowcase() {
     vimeoId: '1108700494',
     title: 'August Talking Head',
     aspectRatio: '177.78%' // 9:16 ratio
+  }, {
+    id: 1,
+    vimeoId: '1108700816',
+    title: 'UL x Brewers',
+    aspectRatio: '75%' // 4:3 ratio
+  }, {
+    id: 4,
+    vimeoId: '1108700681',
+    title: 'Screen Print',
+    aspectRatio: '75%' // 4:3 ratio
   }];
   useEffect(() => {
     // Load Vimeo player script once
@@ -49,7 +49,7 @@ export function WorkShowcase() {
   }, []);
   return <section id="work" className="w-full px-6 py-16 md:px-12 lg:px-20">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold mb-10">Our Work</h2>
+        <h2 className="text-4xl md:text-6xl font-bold mb-10 text-center">Our Work</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {videoProjects.map(project => <div key={project.id} className="rounded-lg overflow-hidden">
               <div className="relative" style={{
@@ -63,7 +63,7 @@ export function WorkShowcase() {
               height: '100%'
             }} title={project.title} className="rounded-lg"></iframe>
               </div>
-              <h3 className="mt-2 text-lg font-medium">{project.title}</h3>
+              <h3 className="mt-2 text-xl md:text-2xl font-medium">{project.title}</h3>
             </div>)}
         </div>
       </div>
