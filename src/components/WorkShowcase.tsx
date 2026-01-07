@@ -26,15 +26,10 @@ export function WorkShowcase() {
     title: 'August Talking Head',
     aspectRatio: '177.78%' // 9:16 ratio
   }, {
-    id: 1,
-    vimeoId: '1108700816',
-    title: 'UL x Brewers',
-    aspectRatio: '75%' // 4:3 ratio
-  }, {
-    id: 4,
-    vimeoId: '1108700681',
-    title: 'Screen Print',
-    aspectRatio: '75%' // 4:3 ratio
+    id: 8,
+    vimeoId: '1152049408',
+    title: 'Milwaukee Campaign',
+    aspectRatio: '177.78%' // 9:16 ratio
   }];
   useEffect(() => {
     // Load Vimeo player script once

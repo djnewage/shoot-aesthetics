@@ -1,7 +1,7 @@
 import React from "react";
 import brewersLogo from "../../assets/brewers.svg";
 import bucksLogo from "../../assets/bucks.svg";
-import admiralsLogo from "../../assets/Milwaukee_Admirals_logo.svg.png";
+import mamLogo from "../../assets/mam.png";
 
 export function ClientsSection() {
   return (
@@ -27,8 +27,8 @@ export function ClientsSection() {
           </div>
           <div className="flex items-center justify-center">
             <img
-              src={admiralsLogo}
-              alt="Milwaukee Admirals"
+              src={mamLogo}
+              alt="Milwaukee Art Museum"
               className="h-20 md:h-28 w-auto"
             />
           </div>
