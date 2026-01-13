@@ -5,30 +5,29 @@ export function HowItWorks() {
     {
       number: '01',
       title: 'Idea Call',
-      description: '30 min to swap references and set a budget.'
+      description: 'A 30-minute conversation to understand your goals and direction.'
     },
     {
       number: '02',
-      title: 'Plan Sheet',
-      description: '1-page mood board in your inbox.'
+      title: 'Simple Plan',
+      description: "A one-page outline so everyone knows what's being made."
     },
     {
       number: '03',
       title: 'Shoot Day',
-      description: 'Small pro crew shows up, directs talent, keeps things on time.'
+      description: 'A small, professional crew that keeps things relaxed and on time.'
     },
     {
       number: '04',
-      title: 'Files Delivered',
-      description: 'Ready to post in 7 days (faster if you need).'
+      title: 'Delivery',
+      description: 'Final videos ready to post within 7 days (faster if needed).'
     }
   ];
 
   return (
     <section className="w-full px-6 py-16 md:px-12 lg:px-20">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-4xl md:text-6xl font-bold mb-4 text-center">How It Works</h2>
-        <p className="text-2xl md:text-3xl text-gray-600 mb-12 text-center">4 Easy Steps</p>
+        <h2 className="text-4xl md:text-6xl font-bold mb-12 text-center">How It Works (4‑Easy Steps)</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {steps.map((step, index) => (
             <div key={index} className="text-center">
